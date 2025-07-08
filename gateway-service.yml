@@ -1,0 +1,39 @@
+server:
+  port: 9000 // to change later
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      routes:
+        - id: employee-service
+          uri: lb://employee-service
+          predicates:
+            - Path=/api/employees/**
+
+        - id: application-service
+          uri: lb://application-service
+          predicates:
+            - Path=/api/applications/**
+
+        - id: housing-service
+          uri: lb://housing-service
+          predicates:
+            - Path=/api/housing/**
+
+        - id: email-service
+          uri: lb://email-service
+          predicates:
+            - Path=/api/emails/**
+
+        - id: eureka
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
