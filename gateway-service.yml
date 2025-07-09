@@ -28,10 +28,30 @@ spring:
           predicates:
             - Path=/api/emails/**
 
-        - id: eureka
-          uri: http://localhost:8761
+        - id: auth-service
+          uri: lb://auth-service
           predicates:
-            - Path=/eureka/**
+            - Path=/api/auth/**
+
+        - id: logging-service
+          uri: lb://logging-service
+          predicates:
+            - Path=/api/logging/**
+
+        - id: visa-service
+          uri: lb://visa-service
+          predicates:
+            - Path=/api/visas/**
+
+        - id: file-service
+          uri: lb://file-service
+          predicates:
+            - Path=/api/files/**
+
+        # - id: eureka
+        #   uri: http://localhost:8761
+        #   predicates:
+        #     - Path=/eureka/**
 
 eureka:
   client:
