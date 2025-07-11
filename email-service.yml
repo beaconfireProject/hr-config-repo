@@ -2,10 +2,6 @@ spring:
   application:
     name: email-service
 
-server:
-  port: 9006 
-
-spring:
   mail:
     host: smtp.gmail.com
     port: 587
@@ -15,6 +11,9 @@ spring:
     properties:
       mail.smtp.auth: true
       mail.smtp.starttls.enable: true
+
+server:
+  port: 9006
 
 eureka:
   client:
