@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: employee
+    name: employee-service
   data:
     mongodb:
       uri: mongodb+srv://fullstack:DLVVKcvO9yp1JIyk@cluster0.xlrhv.mongodb.net/retryWrites=true&w=majority&appName=Cluster0
