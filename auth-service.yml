@@ -5,9 +5,7 @@ server:
 
 spring:
 
-  mvc:
-    servlet:
-      path: /auth
+ 
 
   datasource:
     url: jdbc:mysql://database-1-instance-1.c3ei26ukc461.us-west-1.rds.amazonaws.com:3306/HR_Portal
