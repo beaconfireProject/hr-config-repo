@@ -5,7 +5,7 @@ spring:
 cloud:
   aws:
     credentials:
-      access-key: Your-Access-key
+      access-key: Your-Access-keyhhh
       secret-key: Your-secret-key
     region:
       static: us-west-1
