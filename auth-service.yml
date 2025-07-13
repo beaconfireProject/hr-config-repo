@@ -1,24 +1,18 @@
 server:
   port: 9999
 
-
-
 spring:
-
-mail:
+  mail:
     host: smtp.gmail.com
     port: 587
     username: beaconfiregroupproject@gmail.com
-    password: beaconfiregroup3
+    password: wfymnojuvohocphv
     properties:
       mail:
         smtp:
           auth: true
           starttls:
             enable: true
-
-
- 
 
   datasource:
     url: jdbc:mysql://database-1-instance-1.c3ei26ukc461.us-west-1.rds.amazonaws.com:3306/HR_Portal
@@ -46,8 +40,10 @@ eureka:
 
 jwt:
   secret: your-super-secure-secret-key-that-is-very-long-123456
-  expiration: 86400000  # (example: 1 day in ms)
+  expiration: 86400000  # 1 day in milliseconds
 
 logging:
   level:
     com.example.auth: INFO
+    org.springframework.mail: DEBUG  
+
