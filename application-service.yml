@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: application-service
+    name: hrapplication-service
   mvc:
     servlet:
       path: /application-service
