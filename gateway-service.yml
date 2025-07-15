@@ -18,6 +18,12 @@ spring:
           predicates:
             - Path=/api/applications/**
 
+        - id: onboarding-status
+          uri: lb://application-service
+          predicates:
+            - Path=/api/onboarding/**
+
+
         - id: housing-service
           uri: lb://housing-service
           predicates:
