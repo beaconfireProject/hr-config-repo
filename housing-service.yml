@@ -17,3 +17,7 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         globally_quoted_identifiers: true
         physical_naming_strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+jwt:
+  secret: your-super-secure-secret-key-that-is-very-long-123456
+  expiration: 86400000
