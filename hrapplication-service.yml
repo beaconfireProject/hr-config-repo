@@ -1,6 +1,10 @@
 server:
   port: 9002
 
+jwt:
+  secret: your-super-secure-secret-key-that-is-very-long-123456
+  expiration: 86400000  # 1 day in milliseconds
+
 spring:
   application:
     name: hrapplication-service
