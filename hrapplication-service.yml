@@ -4,9 +4,6 @@ server:
 spring:
   application:
     name: hrapplication-service
-  mvc:
-    servlet:
-      path: /application-service
   cloud:
     config:
       uri: http://localhost:8888
