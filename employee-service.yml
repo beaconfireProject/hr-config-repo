@@ -6,7 +6,7 @@ spring:
     name: employee-service
   data:
     mongodb:
-      uri: mongodb+srv://fullstack:DLVVKcvO9yp1JIyk@cluster0.xlrhv.mongodb.net/retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb+srv://beaconfire:f80sJ28ch4bvztsE@cluster0.xlrhv.mongodb.net/retryWrites=true&w=majority&appName=Cluster0
       database: humanresource
 
 jwt:
