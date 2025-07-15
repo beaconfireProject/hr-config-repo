@@ -12,6 +12,10 @@ cloud:
     s3:
       bucket: hrinfobucket
 
+jwt:
+  secret: your-super-secure-secret-key-that-is-very-long-123456
+  expiration: 86400000  # 1 day in milliseconds
+
 server:
   port: 9005
 
