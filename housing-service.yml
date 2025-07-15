@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: ${DB_URL}
+    url: jdbc:mysql://database-1-instance-1.c3ei26ukc461.us-west-1.rds.amazonaws.com:3306/HR_Portal
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
