@@ -9,6 +9,10 @@ spring:
       uri: mongodb+srv://fullstack:DLVVKcvO9yp1JIyk@cluster0.xlrhv.mongodb.net/retryWrites=true&w=majority&appName=Cluster0
       database: humanresource
 
+jwt:
+  secret: your-super-secure-secret-key-that-is-very-long-123456
+  expiration: 86400000  # 1 day in milliseconds
+
 eureka:
   client:
     register-with-eureka: true
