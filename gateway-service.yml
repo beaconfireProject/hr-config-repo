@@ -13,8 +13,8 @@ spring:
           predicates:
             - Path=/api/employees/**
 
-        - id: application-service
-          uri: lb://application-service
+        - id: hrapplication-service
+          uri: lb://hrapplication-service
           predicates:
             - Path=/api/applications/**
 
