@@ -19,3 +19,8 @@ spring:
 jwt:
   secret: your-super-secure-secret-key-that-is-very-long-123456
   expiration: 86400000
+
+
+feign:
+  httpclient:
+    enabled: true
