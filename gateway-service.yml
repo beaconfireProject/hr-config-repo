@@ -16,7 +16,7 @@ spring:
         - id: hrapplication-service
           uri: lb://hrapplication-service
           predicates:
-            - Path=/api/applications/**
+            - Path=/api/application/**
 
         - id: onboarding-status
           uri: lb://application-service
